@@ -52,6 +52,14 @@ Week 9,
 * Save the stickies to JSON and provide a text box to export the JSON to the user 
 ** Maybe Make an API call to save the data?!?!? 
 
+Reading material: 
+* https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+* https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox
+* https://www.w3schools.com/css/css_boxmodel.asp
+
+Discussion points: 
+* How does the CSS box model work with Flexbox? 
+
 Homework assignment: 
 * Create a user interface using HTML and CSS to display the student data from week 8 in a HTML table. 
 * Add drop downs to support ability to filter the table based off:
