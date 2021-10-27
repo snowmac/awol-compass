@@ -311,3 +311,6 @@ var data = [{"name":"Simeon Noe","gender":"Non-binary","age":16,"gpa":2.0,"dl":f
 
 3. console.log
 
+# Solution solved in week 9 
+https://codepen.io/adambourg/pen/mdMwEmZ?editors=0011 
+

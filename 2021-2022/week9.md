@@ -1,10 +1,11 @@
 # Week 9
 
-* Review the HW assignment and implement it live in class 
+x Review the HW assignment and implement it live in class 
 * HTML and CSS: layouts, style and design
     * Flexbox
     * Designing Mobile websites
     * CSS Box model
+# ---
 * Build a Retrospective Sticky Note builder using HTML and CSS
     * HTML elements: Input fields, drop downs, tables, buttons and things like that
 * Save the stickies to JSON and provide a text box to export the JSON to the user 
@@ -25,3 +26,7 @@ Homework assignment:
     * Drivers licnese status
     * Age 
     * GPA 
+
+Sample code: 
+
+https://codepen.io/adambourg/pen/MWvobmW 
