@@ -1,6 +1,9 @@
 # Agenda: 
 
 * Review week 10 home work assignment
+* Review week 11 home work assignment
+* Pass around js book for review 
+* lecture / code challenge
 
 
 # Week 10 Homework assignment: 
