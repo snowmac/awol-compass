@@ -48,3 +48,5 @@ Example: mutiples(10)
 Return: { numbers: [3,5,6,9] sum: 23 }
 
 Output the return value to the console.
+
+Implement it here: https://codepen.io/adambourg/pen/oNeMwgy
