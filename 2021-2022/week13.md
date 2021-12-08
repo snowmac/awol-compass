@@ -15,13 +15,13 @@ CodePen is going away unless we're exploring very basic concepts like useState i
 # To practice skills
 
 * Javascript - Do coding katas, here are some options
-**  https://jskatas.org/
-** https://www.codewars.com/collections/best-javascript-katas
-** https://dev.to/miku86/javascript-katas-well-of-ideas-easy-3k4d 
+* https://jskatas.org/
+* https://www.codewars.com/collections/best-javascript-katas
+* https://dev.to/miku86/javascript-katas-well-of-ideas-easy-3k4d 
 
 * HTML & CSS
-** https://csskatas.com/
-** https://codepen.io/collection/ABLwQb
+* https://csskatas.com/
+* https://codepen.io/collection/ABLwQb
 
 
 # Today's agenda
