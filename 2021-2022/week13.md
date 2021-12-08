@@ -22,10 +22,10 @@ CodePen is going away unless we're exploring very basic concepts like useState i
 
 # Schedule 
 
-12:45 - 1:00 - Overview and expectations 
-1:00 - 1:30 - Lecture, imperative programming vs declarative, how react uses this, over view of some basic react native components, import statements / export, nodejs intro, etc... 
-1:30 - 2:00 - Live coding on expo.dev. Hello world introduction. Handling user input, etc.. Talk about the in class independant assignment
-2:00 - 2:45 - Adam attends a meeting and the class works solo on building the todo list application 
+* 12:45 - 1:00 - Overview and expectations 
+* 1:00 - 1:30 - Lecture, imperative programming vs declarative, how react uses this, over view of some basic react native components, import statements / export, nodejs intro, etc... 
+* 1:30 - 2:00 - Live coding on expo.dev. Hello world introduction. Handling user input, etc.. Talk about the in class independant assignment
+* 2:00 - 2:45 - Adam attends a meeting and the class works solo on building the todo list application 
 
 # Lecture 
 ## imperative programming vs declarative 
