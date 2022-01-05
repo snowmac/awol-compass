@@ -1,6 +1,7 @@
 # Week 14
 
-Welcome Back! I hope everyone had a good holiday season. 
+Welcome Back! I hope everyone had a good holiday season. We're going to use Expo Dev. I have opened a example here: 
+https://snack.expo.dev/@adambourg/compass-week14-todo-list 
 
 # Today's Agenda
 
