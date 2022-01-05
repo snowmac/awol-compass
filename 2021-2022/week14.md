@@ -29,31 +29,46 @@ It will be a JSON object, here is the example JSON schema:
     "todoId": {
       "description": "The unique identifier for a todo item",
       "type": "integer"
-    }, 
+    },
     "title": {
-        "description": "The title todo item",
-        "type": "string"
+      "description": "The title todo item",
+      "type": "string"
     },
     "description": {
-        "description": "The longer description of an item",
-        "type": "string"
+      "description": "The longer description of an item",
+      "type": "string"
     },
     "labels": {
-        "description": "An array of labels",
-        "type": "array", 
-        "items": {
-            "type": "string"
-        }
+      "description": "An array of labels",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
     },
     "status": {
-        "description": "The status of the todo item",
-        "type": "array",
-        "items": {
-            "type": "string",
-            "enum": ["open", "done", "deleted"]
-        }
+      "description": "The status of the todo item",
+      "type": "string"
     }
   },
-  "required": [ "todoId", "title", "status" ]
+  "required": [
+    "todoId",
+    "title",
+    "status"
+  ]
+}
+```
+
+# Examples
+
+```json
+{
+  "todoId": 66830491,
+  "title": "Pay your mortgage",
+  "status": "done",
+  "description": "None needed",
+  "labels": [
+    "house",
+    "important"
+  ]
 }
 ```
