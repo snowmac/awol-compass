@@ -5,10 +5,9 @@ Focus on building multipage applications.
 A page for: 
 
 1. Main / Todo list home
-* Add a label 
-3. Add todo list
-4. Filtered List
-5. 
+2. Add todo list
+3. Filtered List
+4. Add a label
 
 # Code from last week 
 
