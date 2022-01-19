@@ -10,7 +10,7 @@ Self study is vitally important to being a capable and proficent developer. I've
 
 # Process
 
-Using the React Native Express guide and the Expo Snack concept. I want you to create (1) Expo Snack and use it for your study. If you benefit from typing or need the pratice this is a great time to do it. Basically type or code the code from the example into your snack and run the code. 
+Using the React Native Express guide and the Expo Snack concept. I want you to create (1) Expo Snack and use it for your study. If you benefit from typing or need the pratice this is a great time to do it. Basically type or copy the code from the example into your snack and run the code. 
 
 Try to fix errors before you ask for help. Sometimes the error can be really helpful; eg "undeclared variable" or simple like forgetting a closing bracket. 
 
