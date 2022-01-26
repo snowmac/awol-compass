@@ -62,5 +62,5 @@ Using the todo list we built a few weeks ago. Put on one screen the todo list fo
 
 # Quiz 
 
-Take the Git quiz and email me your results (Adam.Bourg@gmail.com) 
+Take the Git quiz and email me your results from the results page / button (Adam.Bourg@gmail.com) 
 
