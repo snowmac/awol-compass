@@ -60,4 +60,7 @@ https://www.youtube.com/watch?v=nQVCkqvU1uE
 
 Using the todo list we built a few weeks ago. Put on one screen the todo list form that lets you add items to the list and on the main screen put the actual todo list. 
 
+# Quiz 
+
+Take the Git quiz and email me your results (Adam.Bourg@gmail.com) 
 
