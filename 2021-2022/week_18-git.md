@@ -39,7 +39,7 @@ git checkout ${YOUR_NAME}
 git push --set-upstream origin ${YOUR_NAME}
 mkdir ${YOUR_NAME}
 ```
-6. After you're doing with the above bash, copy the files from the directory where you unzipped the snack (All the App.js, Package.json etc... files) into the ${YOUR_NAME} directory
+6. After you're done with the above bash, copy the files from the directory where you unzipped the snack (All the App.js, Package.json etc... files) into the ${YOUR_NAME} directory
 7. Do the bash: 
 ```bash
 git add ${YOUR_NAME}
