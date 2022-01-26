@@ -52,4 +52,12 @@ git push
 
 Worth looking at: https://reactnavigation.org/docs/getting-started/ 
 
+## Navigation Video 
+
+https://www.youtube.com/watch?v=nQVCkqvU1uE 
+
+# Assignment 
+
+Using the todo list we built a few weeks ago. Put on one screen the todo list form that lets you add items to the list and on the main screen put the actual todo list. 
+
 
