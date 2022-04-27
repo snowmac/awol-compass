@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AWOL QWIXX</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="row" id="red">
+            <button>2</button>
+            <button>3</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>10</button>
+            <button>11</button>
+            <button>12</button>
+        </div>
+        <br />
+
+        <div class="row" id="yellow">
+            <button>2</button>
+            <button>3</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>10</button>
+            <button>11</button>
+            <button>12</button>
+        </div>
+        <br/>
+
+        <div class="row" id="green">
+            <button>12</button>
+            <button>11</button>
+            <button>10</button>
+            <button>9</button>
+            <button>8</button>
+            <button>7</button>
+            <button>6</button>
+            <button>5</button>
+            <button>4</button>
+            <button>3</button>
+            <button>2</button>
+        </div>
+        <br/>
+
+        <div class="row" id="blue">
+            <button>12</button>
+            <button>11</button>
+            <button>10</button>
+            <button>9</button>
+            <button>8</button>
+            <button>7</button>
+            <button>6</button>
+            <button>5</button>
+            <button>4</button>
+            <button>3</button>
+            <button>2</button>
+        </div>
+        <br />
+
+        <div class="row" id="points">
+            <div class="points">
+                1x <hr />
+                1
+            </div>
+            <div class="points">
+                2x <hr />
+                3
+            </div>
+            <div class="points">
+                3x <hr />
+                6
+            </div>
+            <div class="points">
+                4x <hr />
+                10
+            </div>
+            <div class="points">
+                5x <hr />
+                15
+            </div>
+            <div class="points">
+                6x <hr />
+                21
+            </div>
+            <div class="points">
+                7x <hr />
+                28
+            </div>
+            <div class="points">
+                8x <hr />
+                36
+            </div>
+            <div class="points">
+                9x <hr />
+                45
+            </div>
+            <div class="points">
+                10x <hr />
+                55
+            </div>
+            <div class="points">
+                11x <hr />
+                66
+            </div>
+            <div class="points">
+                12x <hr />
+                78
+            </div>
+        </div>
+
+        <div class="row" id="strikeout">
+            <button class="strike"></button>
+            <button class="strike"></button>
+            <button class="strike"></button>
+            <button class="strike"></button>
+        </div>
+
+        <br/>
+
+        <div class="row" id="totals" style="border: 1px solid red;">
+            Totals: 
+            <div class="totals" id="red-total"></div>
+            +
+            <div class="totals" id="yellow-total"></div>
+            +
+            <div class="totals" id="green-total"></div>
+            +
+            <div class="totals" id="blue-total"></div>
+            -
+            <div class="totals" id="strike-total"></div>
+            =
+            <div class="totals" id="score"></div>
+        </div>
+
+        <hr /> 
+
+        <div class="row" id="diceArea">
+
+            <span id="die1"></span>
+            <span id="die2"></span>
+            <span id="die3"></span>
+            <span id="die4"></span>
+            <span id="die5"></span>
+            <span id="die6"></span>
+
+            <button id="diceRoll">Roll The Dice!</button>
+        </div> 
+
+    </body>
+    <script src="dice.js"></script>
+</html>
