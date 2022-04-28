@@ -6,62 +6,62 @@
     </head>
     <body>
         <div class="row" id="red">
-            <button>2</button>
-            <button>3</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>10</button>
-            <button>11</button>
-            <button>12</button>
+            <button class="gameBoardColor" data-color="red" data-value="2">2</button>
+            <button class="gameBoardColor" data-color="red" data-value="3">3</button>
+            <button class="gameBoardColor" data-color="red" data-value="4">4</button>
+            <button class="gameBoardColor" data-color="red" data-value="5">5</button>
+            <button class="gameBoardColor" data-color="red" data-value="6">6</button>
+            <button class="gameBoardColor" data-color="red" data-value="7">7</button>
+            <button class="gameBoardColor" data-color="red" data-value="8">8</button>
+            <button class="gameBoardColor" data-color="red" data-value="9">9</button>
+            <button class="gameBoardColor" data-color="red" data-value="10">10</button>
+            <button class="gameBoardColor" data-color="red" data-value="11">11</button>
+            <button class="gameBoardColor" data-color="red" data-value="12">12</button>
         </div>
         <br />
 
         <div class="row" id="yellow">
-            <button>2</button>
-            <button>3</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>10</button>
-            <button>11</button>
-            <button>12</button>
+            <button class="gameBoardColor" data-color="yellow" data-value="2">2</button>
+            <button class="gameBoardColor" data-color="yellow" data-value="3">3</button>
+            <button class="gameBoardColor" data-color="yellow" data-value="4">4</button>
+            <button class="gameBoardColor" data-color="yellow" data-value="5">5</button>
+            <button class="gameBoardColor" data-color="yellow" data-value="6">6</button>
+            <button class="gameBoardColor" data-color="yellow" data-value="7">7</button>
+            <button class="gameBoardColor" data-color="yellow" data-value="8">8</button>
+            <button class="gameBoardColor" data-color="yellow" data-value="9">9</button>
+            <button class="gameBoardColor" data-color="yellow" data-value="10">10</button>
+            <button class="gameBoardColor" data-color="yellow" data-value="11">11</button>
+            <button class="gameBoardColor" data-color="yellow" data-value="12">12</button>
         </div>
         <br/>
 
         <div class="row" id="green">
-            <button>12</button>
-            <button>11</button>
-            <button>10</button>
-            <button>9</button>
-            <button>8</button>
-            <button>7</button>
-            <button>6</button>
-            <button>5</button>
-            <button>4</button>
-            <button>3</button>
-            <button>2</button>
+            <button class="gameBoardColor" data-color="green" data-value="12">12</button>
+            <button class="gameBoardColor" data-color="green" data-value="11">11</button>
+            <button class="gameBoardColor" data-color="green" data-value="10">10</button>
+            <button class="gameBoardColor" data-color="green" data-value="9">9</button>
+            <button class="gameBoardColor" data-color="green" data-value="8">8</button>
+            <button class="gameBoardColor" data-color="green" data-value="7">7</button>
+            <button class="gameBoardColor" data-color="green" data-value="6">6</button>
+            <button class="gameBoardColor" data-color="green" data-value="5">5</button>
+            <button class="gameBoardColor" data-color="green" data-value="4">4</button>
+            <button class="gameBoardColor" data-color="green" data-value="3">3</button>
+            <button class="gameBoardColor" data-color="green" data-value="2">2</button>
         </div>
         <br/>
 
         <div class="row" id="blue">
-            <button>12</button>
-            <button>11</button>
-            <button>10</button>
-            <button>9</button>
-            <button>8</button>
-            <button>7</button>
-            <button>6</button>
-            <button>5</button>
-            <button>4</button>
-            <button>3</button>
-            <button>2</button>
+            <button class="gameBoardColor"  data-color="blue" data-value="12">12</button>
+            <button class="gameBoardColor"  data-color="blue" data-value="11">11</button>
+            <button class="gameBoardColor"  data-color="blue" data-value="10">10</button>
+            <button class="gameBoardColor"  data-color="blue" data-value="9">9</button>
+            <button class="gameBoardColor"  data-color="blue" data-value="8">8</button>
+            <button class="gameBoardColor"  data-color="blue" data-value="7">7</button>
+            <button class="gameBoardColor"  data-color="blue" data-value="6">6</button>
+            <button class="gameBoardColor"  data-color="blue" data-value="5">5</button>
+            <button class="gameBoardColor"  data-color="blue" data-value="4">4</button>
+            <button class="gameBoardColor"  data-color="blue" data-value="3">3</button>
+            <button class="gameBoardColor"  data-color="blue" data-value="2">2</button>
         </div>
         <br />
 
@@ -142,18 +142,133 @@
 
         <hr /> 
 
+        <div class="row" id="messageCenter">
+            <h1> Welcome to the game</h1>
+            <p>Please roll the dice to begin the game</p>
+        </div>
+
+        <hr />
+
         <div class="row" id="diceArea">
 
-            <span id="die1"></span>
-            <span id="die2"></span>
-            <span id="die3"></span>
-            <span id="die4"></span>
-            <span id="die5"></span>
-            <span id="die6"></span>
+            <button class="white" id="die1">-</button>
+            <button class="white" id="die2">-</button>
 
-            <button id="diceRoll">Roll The Dice!</button>
+            <button class="colored blue" id="die3">-</button>
+            <button class="colored green" id="die4">-</button>
+            <button class="colored yellow" id="die5">-</button>
+            <button class="colored red" id="die6">-</button>
+
+            <button id="diceRoll">Roll</button>
         </div> 
 
     </body>
     <script src="dice.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+
+    <script>
+        var defaults = {
+            2: {scored: false, disabled: false},
+            3: {scored: false, disabled: false},
+            4: {scored: false, disabled: false},
+            5: {scored: false, disabled: false},
+            6: {scored: false, disabled: false},
+            7: {scored: false, disabled: false},
+            8: {scored: false, disabled: false},
+            9: {scored: false, disabled: false},
+            10: {scored: false, disabled: false},
+            11: {scored: false, disabled: false},
+            12: {scored: false, disabled: false}
+        };
+
+        var score = {
+            
+            // option 1: 
+            // state 1; the item is scored and counts towards our score 
+            // { value: 2, scored: true, disabled: true    }
+            // state 2: the item is not scored but not yet disabled / crossed out
+            // { value: 2, scored: false, disabled: false    }
+            // state 3: the item is not scored but disabled 
+            // { value: 2, scored: false, disabled: true    }
+
+            // option 1a: (Robert)
+            // { 2: {scored: false, disabled: false} }
+            // 
+
+            // option 2 
+            // 2 running tallies, 
+            // numbers not counted towards the score
+            // var score = { yellow: [] }
+            // items to the left of the value that have not already been scored 
+            // var noLongerValidOptions = { yellow: [] }
+            // numbers counted towards the score
+            yellow: { ...defaults },
+            red: {},
+            green: {},
+            blue: {}
+        }
+
+        $(document).ready(function() {
+           // On page load, disable the colored buttons
+           $('.colored').attr('disabled', true); 
+           // On press of roll, generate some dice
+
+           $('.gameBoardColor').on('click', function(event) {
+            var selectedColor = $(event.target).data('color');
+            var selectedValue = $(event.target).data('value');
+            var isDisabled = $(event.target).attr('disabled');
+
+            var sum = window.colorValues.white1 + window.colorValues.white2;
+
+            if(!isDisabled) {
+                
+                if(sum !== selectedValue) {
+                    alert('You\'ve selected an invalid option')
+                } else {
+                    var element = score[selectedColor][selectedValue]; 
+                    // a valid option 
+                    if(element.scored === false && element.disabled === false) {
+                        // mark the element that is scored as such
+                        score[selectedColor][selectedValue].scored = true; 
+
+                        // these next two if statements are marking the selected number
+                        // as disabled, aka it's no longer a valid option
+                        
+                        if(selectedColor === 'red' || selectedColor === 'yellow') {
+                            for(var i = selectedValue-1; i >= 2; i--){
+                                score[selectedColor][i].disabled = true; 
+                            }
+                        }
+
+                        if(selectedColor === 'green' || selectedColor === 'blue') {
+                            for(var i = selectedValue; i <= 12; i++){
+                                score[selectedColor][i].disabled = true; 
+                            }
+                        }
+
+                        console.log(score[selectedColor])
+                    } else {
+                        alert('Please select a valid option'); 
+                    }
+                }
+
+
+            }
+            
+           }); 
+
+           // This is where the game play begins
+           $(document).on('diceRolled', function(){
+
+            var sum = window.colorValues.white1 + window.colorValues.white2; 
+
+            $('#messageCenter p').text(`You rolled a ${sum} on white, please select any color above or press the skip button.`)
+
+
+
+
+
+           });
+        });               
+    </script>
 </html>

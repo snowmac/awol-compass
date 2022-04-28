@@ -20,12 +20,41 @@ var dice = {
   var button = document.getElementById('diceRoll');
   
   button.onclick = function() {
-    printNumber(dice.roll(), 'die1');
-    printNumber(dice.roll(), 'die2');
-    printNumber(dice.roll(), 'die3');
-    printNumber(dice.roll(), 'die4');
-    printNumber(dice.roll(), 'die5');
-    printNumber(dice.roll(), 'die6');
+    var [
+      white1, 
+      white2, 
+      blue, 
+      yellow,
+      green,
+      red
+    ] = [
+      dice.roll(),
+      dice.roll(),
+      dice.roll(),
+      dice.roll(),
+      dice.roll(),
+      dice.roll()
+    ];
+
+    // taking the color values and storing them into a global scope
+    window.colorValues = {
+      white1, 
+      white2, 
+      blue, 
+      yellow,
+      green,
+      red
+    }
+    
+    printNumber(white1, 'die1');
+    printNumber(white2, 'die2');
+    printNumber(blue, 'die3');
+    printNumber(yellow, 'die4');
+    printNumber(green, 'die5');
+    printNumber(red, 'die6');
+
+    var event = new Event('diceRolled');
+    document.dispatchEvent(event); 
   };
   
   
