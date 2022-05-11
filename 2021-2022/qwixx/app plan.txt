@@ -8,10 +8,12 @@ x3. Concept of rolling the die,
     2 white
     1 green, red, blue, yellow
 -4. Game play and rules
-    -> White mode; selecting the colored column / number that is valid for the white dice
+    x-> White mode; selecting the colored column / number that is valid for the white dice
+    -> White Mode to skip to everything mode 
     -> Everything mode
 -5. Logic to take away colors (up to 2)
 -6. End of game logic 
     -> 2 colors 
     or
     -> 4 penalities taken
+-7. Skip Button 

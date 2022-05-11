@@ -167,6 +167,9 @@
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
 
     <script>
+        // white, skip, everything (all colors), endOfGame
+        var gameMode = 'white'; 
+
         var score = {
             
             // option 1: 
@@ -272,7 +275,6 @@
 
             var sum = window.colorValues.white1 + window.colorValues.white2;
 
-
             if(!isDisabled) {
                 
                 if(sum !== selectedValue) {
@@ -281,6 +283,12 @@
                     var element = score[selectedColor][selectedValue];
                     // a valid option 
                     if(element.scored === false && element.disabled === false) {
+
+                        if(gameMode==='white') {
+                            gameMode = 'everything'; 
+                            $('#messageCenter p').text('Please select a white die and a color die, then select a color to play'); 
+                        }
+
                         // mark the element that is scored as such
                         score[selectedColor][selectedValue].scored = true; 
 
