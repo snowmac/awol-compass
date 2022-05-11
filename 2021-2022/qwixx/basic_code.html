@@ -167,20 +167,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
 
     <script>
-        var defaults = {
-            2: {scored: false, disabled: false},
-            3: {scored: false, disabled: false},
-            4: {scored: false, disabled: false},
-            5: {scored: false, disabled: false},
-            6: {scored: false, disabled: false},
-            7: {scored: false, disabled: false},
-            8: {scored: false, disabled: false},
-            9: {scored: false, disabled: false},
-            10: {scored: false, disabled: false},
-            11: {scored: false, disabled: false},
-            12: {scored: false, disabled: false}
-        };
-
         var score = {
             
             // option 1: 
@@ -202,10 +188,50 @@
             // items to the left of the value that have not already been scored 
             // var noLongerValidOptions = { yellow: [] }
             // numbers counted towards the score
-            yellow: { ...defaults },
-            red: { ...defaults },
-            green: { ...defaults },
-            blue: { ...defaults }
+            yellow: { 2: {scored: false, disabled: false},
+            3: {scored: false, disabled: false},
+            4: {scored: false, disabled: false},
+            5: {scored: false, disabled: false},
+            6: {scored: false, disabled: false},
+            7: {scored: false, disabled: false},
+            8: {scored: false, disabled: false},
+            9: {scored: false, disabled: false},
+            10: {scored: false, disabled: false},
+            11: {scored: false, disabled: false},
+            12: {scored: false, disabled: false} },
+            red: { 2: {scored: false, disabled: false},
+            3: {scored: false, disabled: false},
+            4: {scored: false, disabled: false},
+            5: {scored: false, disabled: false},
+            6: {scored: false, disabled: false},
+            7: {scored: false, disabled: false},
+            8: {scored: false, disabled: false},
+            9: {scored: false, disabled: false},
+            10: {scored: false, disabled: false},
+            11: {scored: false, disabled: false},
+            12: {scored: false, disabled: false} },
+            green: { 2: {scored: false, disabled: false},
+            3: {scored: false, disabled: false},
+            4: {scored: false, disabled: false},
+            5: {scored: false, disabled: false},
+            6: {scored: false, disabled: false},
+            7: {scored: false, disabled: false},
+            8: {scored: false, disabled: false},
+            9: {scored: false, disabled: false},
+            10: {scored: false, disabled: false},
+            11: {scored: false, disabled: false},
+            12: {scored: false, disabled: false} },
+            blue: { 2: {scored: false, disabled: false},
+            3: {scored: false, disabled: false},
+            4: {scored: false, disabled: false},
+            5: {scored: false, disabled: false},
+            6: {scored: false, disabled: false},
+            7: {scored: false, disabled: false},
+            8: {scored: false, disabled: false},
+            9: {scored: false, disabled: false},
+            10: {scored: false, disabled: false},
+            11: {scored: false, disabled: false},
+            12: {scored: false, disabled: false} }
         }
 
         $(document).ready(function() {
@@ -220,14 +246,13 @@
 
             var sum = window.colorValues.white1 + window.colorValues.white2;
 
-            debugger; 
 
             if(!isDisabled) {
                 
                 if(sum !== selectedValue) {
                     alert('You\'ve selected an invalid option')
                 } else {
-                    var element = score[selectedColor][selectedValue]; 
+                    var element = score[selectedColor][selectedValue];
                     // a valid option 
                     if(element.scored === false && element.disabled === false) {
                         // mark the element that is scored as such
