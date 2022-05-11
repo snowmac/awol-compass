@@ -203,9 +203,9 @@
             // var noLongerValidOptions = { yellow: [] }
             // numbers counted towards the score
             yellow: { ...defaults },
-            red: {},
-            green: {},
-            blue: {}
+            red: { ...defaults },
+            green: { ...defaults },
+            blue: { ...defaults }
         }
 
         $(document).ready(function() {
@@ -219,6 +219,8 @@
             var isDisabled = $(event.target).attr('disabled');
 
             var sum = window.colorValues.white1 + window.colorValues.white2;
+
+            debugger; 
 
             if(!isDisabled) {
                 
@@ -236,17 +238,17 @@
                         
                         if(selectedColor === 'red' || selectedColor === 'yellow') {
                             for(var i = selectedValue-1; i >= 2; i--){
+                                $('button[data-color="'+selectedColor+'"][data-value="'+i+'"]').addClass('disabled'); 
                                 score[selectedColor][i].disabled = true; 
                             }
                         }
 
                         if(selectedColor === 'green' || selectedColor === 'blue') {
                             for(var i = selectedValue; i <= 12; i++){
+                                $('button[data-color="'+selectedColor+'"][data-value="'+i+'"]').addClass('disabled'); 
                                 score[selectedColor][i].disabled = true; 
                             }
                         }
-
-                        console.log(score[selectedColor])
                     } else {
                         alert('Please select a valid option'); 
                     }
@@ -263,7 +265,6 @@
             var sum = window.colorValues.white1 + window.colorValues.white2; 
 
             $('#messageCenter p').text(`You rolled a ${sum} on white, please select any color above or press the skip button.`)
-
 
 
 
