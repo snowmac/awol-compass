@@ -127,17 +127,17 @@
 
         <div class="row" id="totals" style="border: 1px solid red;">
             Totals: 
-            <div class="totals" id="red-total"></div>
+            <div class="totals" id="red-total">0</div>
             +
-            <div class="totals" id="yellow-total"></div>
+            <div class="totals" id="yellow-total">0</div>
             +
-            <div class="totals" id="green-total"></div>
+            <div class="totals" id="green-total">0</div>
             +
-            <div class="totals" id="blue-total"></div>
+            <div class="totals" id="blue-total">0</div>
             -
-            <div class="totals" id="strike-total"></div>
+            <div class="totals" id="strike-total">0</div>
             =
-            <div class="totals" id="score"></div>
+            <div class="totals" id="score">0</div>
         </div>
 
         <hr /> 
@@ -234,6 +234,32 @@
             12: {scored: false, disabled: false} }
         }
 
+        var scores = {
+            red: 0, 
+            green: 0, 
+            blue: 0,
+            yellow: 0
+        };
+
+        function printScore(value, color) {
+            var scoreList = {
+                1: 1, 
+                2: 3,
+                3: 6, 
+                4: 10, 
+                5: 15, 
+                6: 21, 
+                7: 28, 
+                8: 36, 
+                9: 45, 
+                10: 55, 
+                11: 66, 
+                12: 78  
+            }; 
+
+            $("#"+color+"-total").text(scoreList[value]); 
+        }
+
         $(document).ready(function() {
            // On page load, disable the colored buttons
            $('.colored').attr('disabled', true); 
@@ -269,11 +295,16 @@
                         }
 
                         if(selectedColor === 'green' || selectedColor === 'blue') {
-                            for(var i = selectedValue; i <= 12; i++){
+                            for(var i = selectedValue+1; i <= 12; i++){
                                 $('button[data-color="'+selectedColor+'"][data-value="'+i+'"]').addClass('disabled'); 
                                 score[selectedColor][i].disabled = true; 
                             }
                         }
+
+                        scores[selectedColor] += 1; 
+                        printScore(scores[selectedColor], selectedColor); 
+
+                        $('button[data-color="'+selectedColor+'"][data-value="'+selectedValue+'"]').text('x');
                     } else {
                         alert('Please select a valid option'); 
                     }
@@ -290,9 +321,6 @@
             var sum = window.colorValues.white1 + window.colorValues.white2; 
 
             $('#messageCenter p').text(`You rolled a ${sum} on white, please select any color above or press the skip button.`)
-
-
-
 
            });
         });               
